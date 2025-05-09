@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cadbury World</title>
+        
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="LightCSS.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        
+        <script src="SharedFunctions.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+        <script src="Reviews.js"></script>
+    </head>
+
+    <body>
+        <div class="header">
+            <i id="backArrow" class="fa-solid fa-arrow-left" onclick="history.back()" style="cursor: pointer;"></i>
+            <i id="modeIcon" class="fa-regular fa-moon" onclick="switchStyleSheet()" style="cursor: pointer;"></i>
+            <h1>Cadbury World</h1>
+            <i id="fontIcon" class="fa-solid fa-font" onclick="largerFont()" style="cursor: pointer;"></i>
+        </div>
+
+        <div class="subheading" id="subheading">
+            Dive into a world of chocolatey wonder at Cadbury World, the one-of-a-kind attraction in Bournville, Birmingham! Built on the original Cadbury factory site for £6 million, this delicious destination offers a self-guided journey through the magic of chocolate-making, interactive experiences, and fun-filled activities for kids of all ages.
+        </div>
+
+        <div class="cadbury-gallery">
+            <img src="images/cadbury-exterior.webp" alt="Cadbury Exterior">
+            <img src="images/cadbury-cafe.webp" alt="Cadbury Cafe">
+            <img src="images/cadbury-family.jpeg" alt="Cadbury Family">
+        </div>
+        
+        <div class="subheading">
+            <h2>Reviews</h2>
+        </div>
+
+        <div class="dropdown-menu">
+            <label for="review-filter" style="margin-right: 10px;">Filter reviews by activity:</label>
+            <select id="review-filter">
+                <option value="">--Select--</option>
+                <option value="Cadbury Chocolate Quest">Cadbury Chocolate Quest</option>
+                <option value="4D Chocolate Adventure">4D Chocolate Adventure</option>
+                <option value="African Adventure Play Area">African Adventure Play Area</option>
+                <option value="Green Screen">Green Screen</option>
+            </select>
+        </div>
+
+        <div id="reviewList" class="review-box" ></div>
+
+        <div class="review-container">
+            <div style="width: 100%; text-align: center;">
+                <h2>Write a Review</h2>
+            </div>
+            <div class="review-input-row">
+                <div class="input-group">
+                    <label for="userInput">Submit a review:</label>
+                    <textarea id="userInput" placeholder="Type your review here..." rows="1"></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label for="activitySelect">Select activity:</label>
+                    <select id="activitySelect">
+                        <option value="">--Select--</option>
+                        <option value="Cadbury Chocolate Quest">Cadbury Chocolate Quest</option>
+                        <option value="4D Chocolate Adventure">4D Chocolate Adventure</option>
+                        <option value="African Adventure Play Area">African Adventure Play Area</option>
+                        <option value="Green Screen">Green Screen</option>
+                    </select>
+                </div>
+                <button id="submitBtn">Submit</button>
+            </div>
+        </div>        
+    </body>
+</html>

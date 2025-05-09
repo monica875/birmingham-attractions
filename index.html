@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Birmingham Attractions</title>
+        
+        <link id="pagestyle" rel="stylesheet" type="text/css" href="LightCSS.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <script src="SharedFunctions.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+        <script src="SearchBar.js"></script>
+    
+    </head>
+
+    <body>
+        <div class="header">
+            <i id="modeIcon" class="fa-regular fa-moon" onclick="switchStyleSheet()" style="cursor: pointer;"></i>
+            <h1>Birmingham Attractions</h1>
+            <i id="fontIcon" class="fa-solid fa-font" onclick="largerFont()" style="cursor: pointer;"></i>
+        </div>
+
+        <div class="subheading" id="subheading">
+            Welcome to my website about attractions in Birmingham, UK. Using this page, you will be redirected to pages on specific attractions and also search them by name.
+        </div>
+
+        <div class="search-bar" id="searchBar">
+            <label for="tags" style="margin-right: 10px; font-size: 16px;">Search by Name:</label>
+            <input id="tags">
+        </div>
+        
+        <div class="attraction-grid">
+            <div class="attraction">
+                <img src="images/library-exterior.jpeg" data-name="Library of Birmingham">
+                <h2>Library of Birmingham</h2>
+                <p>Europe's largest library with beautiful views of the city.</p>
+            </div>
+            
+            <a href="CadburyWorld.html">
+                <div class="attraction">
+                    <img src="images/cadbury-sign.webp" data-name="Cadbury World">
+                    <h2>Cadbury World</h2>
+                    <p>Chocolate lovers heaven, only one in the world.</p>
+                </div>
+            </a>
+
+            <div class="attraction">
+                <img src="images/bclm.jpeg" data-name="Black Country Living Museum">
+                <h2>Black Country Living Museum</h2>
+                <p>Open-air Historic Museum in the centre of the Black Country.</p>
+            </div>
+        </div>
+    </body>
+</html>
